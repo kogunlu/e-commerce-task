@@ -14,9 +14,8 @@ $(document).ready(function(){
 
   var delay = 3000;
 
-  //Please uncomment the commented line below to see popup!
 jQuery(document).ready(function($){
-//setTimeout(function(){ showNewsletterPopup(); }, delay);s
+setTimeout(function(){ showNewsletterPopup(); }, delay);
   $('.popup-close').click(function(){
       $('.newsletter-overlay').hide(); 
   });
