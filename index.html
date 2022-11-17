@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akilli E-ticaret</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        </head>
+
+</head>
+<body id="main">
+    <div id="mySidenav" class="sidenav">
+        <div href="javascript:void(0)" class="closebtn grey" onclick="closeNav()">&times;</div>
+
+        <!-- Menu list will be here -->
+        <div style="width: 90%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+
+        </div>
+        
+      </div>
+    <!-- Header icindeki kalp ve sepeti ekrana göre relative yap + ustteki kırmızı seyleri ayarla -->
+    <header class="header">
+        <!-- Top part of header -->
+        <div class="header-top">
+            
+            <!-- Left part -->
+        <div class="header-top-left">
+            <img src="/images/Ekran Resmi 2022-11-15 13.02.23.png" alt="" height="20em">
+            <p style="white-space: nowrap;">FREE Express Shipping On Orders $99+</p>
+        </div>
+            <!-- Right part -->
+        <div class="header-top-right">
+            <select name="currency" id="currency">
+                <option value="usd">USD</option>
+                <option value="tl">TL</option>
+              </select>
+
+             <div class="language-div">
+                <!-- Img can be changed with addeventlistener -->
+                <img src="/images/Ekran Resmi 2022-11-15 13.03.46.png" alt="" height="20em">
+                <select name="languages" id="languages">
+                    <option value="eng">Eng</option>
+                    <option value="tur">Tur</option>
+                    <option value="ger">Ger</option>
+                    <option value="fre">Fre</option>
+                  </select>
+             </div> 
+            
+             <div style="" class="accounts">
+            <a href="#" class="headerBtn" id="my-account" style="width: 40%;">My Account</a>  
+            <a href="#" class="headerBtn" id="cart">Cart</a>  
+            <a href="#" class="headerBtn" id="log-in">Log In</a>
+             </div>
+
+            <!-- Socials -->
+            <div class="socials">
+                <a href="#">
+                    <img src="/images/Ekran Resmi 2022-11-15 13.04.55.png" alt="facebook" height="20em">
+                </a>
+                <a href="#">
+                    <img src="/images/Ekran Resmi 2022-11-15 13.05.02.png" alt="twitter" height="20em">
+                </a>
+                <a href="#">
+                    <img src="/images/Ekran Resmi 2022-11-15 13.05.08.png" alt="instagram" height="20em">
+                </a>
+            </div>
+            
+
+        </div>
+
+        </div>
+
+        <!-- Middle part of header -->
+        <div class="header-middle">
+            <!-- Left part of middle layer -->
+            <div>
+                <img src="/images/Ekran Resmi 2022-11-15 13.39.40.png" alt="8" height="25em">
+            </div>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search..">
+                </input>
+
+                <select name="search-drop-down" id="search-drop-down">
+                    <option disabled selected>All Categories</option>
+                </select>
+
+                <a id="a-search" href="#">
+                    <i class="fa fa-search" style="font-size:18px" id="findBtn"></i>
+                </a>    
+
+            </div>
+
+            <!-- Right part of middle layer -->
+            <div class="my-profile">
+                <div>
+                    <i class="fa fa-user" aria-hidden="true" id="user-logo" style='font-size:40px'></i>
+                    
+                </div>
+
+                <!-- Text part -->
+                <div>
+                    <a href="#" class="header-text-mid" style="text-decoration:none">
+                        <span id="p-1">Welcome</span>
+                    <span id="p-2"><strong>My Account</strong></span>
+                    </a>
+                </div>
+
+                <a href="#">
+                    <i class="fa fa-heart font-logo" id="i-1"></i>
+                    <span class="i-class" id="i-11">0</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-shopping-bag font-logo" id="i-2"></i>
+                    <span class="i-class" id="i-22">0</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navbar part of Header -->
+        <nav class="nav-bar">
+
+            <!-- Left part -->
+        <div class="nav-bar-left">
+            <!-- List section -->
+            <a href="#" class="menu-list" style="padding-right: 3%; padding-left: 3%;" id="menu">
+                <i class="fa fa-bars" style="font-size:24px; margin-left: 2%;"></i>
+                <p class="depsP">ALL DEPARTMENTS</p>
+            </a href="#">
+            <div class="nav-img">
+                <img src="/images/Ekran Resmi 2022-11-15 13.39.40.png" alt="8" height="25em">
+            </div>
+            <div class="for-mobile">
+                <a href="#">
+                    <i class="fa fa-heart font-logo" id="i-1"></i>
+                    <span class="i-class" id="i-11">0</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-shopping-bag font-logo" id="i-2"></i>
+                    <span class="i-class" id="i-22">0</span>
+                </a>
+            </div>
+            <!-- 5 items section -->
+            <div class="five-items">
+                <div>
+                    <a href="#">
+                        <p><strong>Home</strong></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Shop</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Products</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Pages</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Buy Porto</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <!-- Right part -->
+            <div class="nav-bar-right">
+                <div>
+                    <a href="#">
+                        <p style="margin-right: 5px;"><strong>FLASH DEALS</strong></p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p><strong>NEW ARRIVALS</strong></p>
+                    </a>
+                </div>
+                <div class="contact">
+                    <i class="fa fa-phone" style="font-size:24px"></i>
+                    <p style="margin-left: 3%;">1-800-234-5678</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- All Departments menu -->
+        <div style="z-index: 1; position: absolute; top: 19%; left: 6.25% ; width: 80% ; height: 35em; display: none; " id="toggler-menu">
+
+            <div style="width: 100%; height:100% ;display: flex;">
+            <!-- Left side -->
+            <div style="width: 25%; height: 80%; display: flex; flex-direction: column; justify-content: flex-start; border-top: solid 2px blue; ">
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start;">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.23.48.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Fashion</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none;" class="selected">&#10095;</a></button>
+                    </div>
+                </div>
+                
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.23.56.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Electronics</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none; color:grey">&#10095;</a></button>
+                    </div>
+                </div>
+
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.24.03.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Gifts</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none; color:grey">&#10095;</a></button>
+                    </div>
+                </div>
+
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.24.11.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Home & Garden</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none; color:grey">&#10095;</a></button>
+                    </div>
+                </div>
+
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.24.25.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Gaming</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none; color:grey">&#10095;</a></button>
+                    </div>
+                </div>
+
+                <div class="z-menu">
+
+                    <div style="display: flex; align-items: center; justify-content:start">
+                        <div><img src="/images/Ekran Resmi 2022-11-16 13.24.33.png" alt="" height="25px"></div>
+                        <p style="margin-left:10%;">Sports</p>
+                    </div>
+                    
+                    <div>
+                        <button class="w3-button w3-black w3-display-right" style="font-size:x-large; font-weight:lighter; border: none; background-color: rgb(247, 247, 247);"><a href="#" style="text-decoration:none; color:grey">&#10095;</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side -->
+            <div style="width:70%; height:100%; display: flex; flex-direction: column; background-color: green; border: solid 1px grey; border-top: solid 2px blue;">
+
+                <!-- upper part -->
+                <div style=" background-color: white;width: 100%; height: 70%; display: flex; justify-content: space-around; align-items: center;">
+
+                    <!-- Sub-menu -->
+                    <div style="display: flex; flex-direction: column; justify-content: start; align-content: space-between; width: 40%; height: 90%;">
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="width: 40%;">
+                                <p style="font-weight: bold; font-size:medium;">WOMAN</p>
+                                <p class="gray-sm-f">Top & Blouses</p>
+                                <p class="gray-sm-f">Accessories</p>
+                                <p class="gray-sm-f">Dresses & Skirts</p>
+                                <p class="gray-sm-f">Shoes & Boots</p>
+                            </div>
+
+                            <div style="width: 40%;">
+                                <p style="font-weight: bold; font-size:medium;">MAN</p>
+                                <p class="gray-sm-f">Accessories</p>
+                                <p class="gray-sm-f">Watch Fashion</p>
+                                <p class="gray-sm-f">Tees, Knits, Polos</p>
+                                <p class="gray-sm-f">KOKA</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <div style="width: 40%;">
+                                <p style="font-weight: bold; font-size:medium;">JEWELLERY</p>
+                                <p class="gray-sm-f">Sweaters</p>
+                                <p class="gray-sm-f">Heels & Sandals</p>
+                                <p class="gray-sm-f">Jeans & Shorts</p>
+                            </div>
+
+                            <div style="width: 40%;">
+                                <p style="font-weight: bold; font-size:medium;">KIDS FASHION</p>
+                                <p class="gray-sm-f">Casual Shoes</p>
+                                <p class="gray-sm-f">Spring & Autmn</p>
+                                <p class="gray-sm-f">Winter Sneakers</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Poster -->
+                    <div style="width: 30%; height: 80%; display: flex; justify-content: end; align-items: center;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.01.19.png" alt="" width="250em" height="350em">
+                    </div>
+             
+                </div>
+
+                <!-- bottom part -->
+                <div style="width: 100%; height: 30%; display: flex
+                ; flex-direction: row; justify-content: space-around; align-items: center; background-color: white">
+                    <a href="#" style="border: solid 1px grey;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.01.59.png" alt="" height="50em">
+                    </a>
+                    <a href="#" style="border: solid 1px grey;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.10.17.png" alt="" height="50em">
+                    </a>
+                    <a href="#" style="border: solid 1px grey;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.10.30.png" alt="" height="50em">
+                    </a>
+                    <a href="#" style="border: solid 1px grey;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.02.38.png" alt="" height="50em">
+                    </a>
+                    <a href="#" style="border: solid 1px grey;">
+                        <img src="/images/Ekran Resmi 2022-11-16 13.02.49.png" alt="" height="50em">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+
+    <!-- Popup part -->
+    <div  class="newsletter-overlay">
+
+        <div id="newsletter-popup">
+
+          <a href="#" class="popup-close">X</a>
+
+          <div class="newsletter-in">
+
+            <div style="width: 60%; height:15em; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;">
+                <h3 style="line-height: 1 ;margin-top: 5px; margin-bottom: 10px; margin-right: 10px">SUBSCRIBE TO NEWSLETTER</h3>
+
+                <p style="color: grey; line-height: 1 ;margin-top: 5px; margin-bottom: 10px; margin-right: 10px;">Subsribe to the Porto mailing list to receive updates on new arrivals, special offers and our promotions.</p>
+
+                <div style="height: 30%; width:100%; display: flex; justify-content: start; align-items: center;">
+
+                        <input style="width: 80%; height: 60%; border:none; background-color: rgb(239, 239, 237); padding-left: 5%; border-radius: 20px 0 0 20px;" type="text" placeholder="Your E-mail Address" id="popup-input-text">
+                        </input>
+
+                        <a href="#" style="width: 30%; height: 60%; color: white; text-decoration: none; display: flex; justify-content: center; align-items: center; border: solid 1px blue; background-color: blue; border-radius: 0 20px 20px 0;">
+                            SUBMIT
+                        </a>
+                </div>
+
+                <div class="center">
+                    <input type="checkbox" id="dont-show" name="dont-show" value="">
+                    <label for="dont-show" style="color: grey; font-size:small; padding-top: 1%;"> Don't show this popup again</label>
+                </div>
+            </div>
+
+            <div style="height: 100% ;">
+                <img src="/Ekran Resmi 2022-11-16 14.31.56.png" alt="" height="250px" width="250px">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Main part -->
+    <main >
+        <!-- Poster's container -->
+        <div class="container-main">
+
+            <div class="poster">
+                <button class="w3-button w3-black w3-display-left btn-left" ><a href="#" style=" text-decoration:none; color: blue;">&#10094;</a></button>
+                <!-- Left part -->
+                <div class="poster-left-text">
+                    <div class="text-1">
+                        <p class="poster-white-text" id="text-1-p-1"><i><strong>TRENDY</strong></i></p>
+                        <p class="poster-black-text" id="text-1-p-2"><strong>GAMING</strong></p>
+                    </div>
+                    <div class="text-2">
+                        <p class="poster-black-text" id="text-2-p-1"><strong>CHAIRS</strong></p>
+                        <p class="poster-white-text" id="text-2-p-2"><i><strong>DEALS</strong></i></p>
+
+                    </div>
+
+                    <!-- this part is for mobile, default is display none -->
+                    <div class="poster-right-mb">
+                        <span class="content-title"><strong>Porto Game Chair</strong></span>
+                    <span style="font-size: 15px; margin-top: 2%; margin-bottom: 5%;">from <s>$299.99</s></span>
+                        <!-- The p element and the div will be next to each other -->
+                        <span class="content">
+                            <span style="font-size: 20px; ">
+                                to
+                            </span>
+                            <!-- This div will be rotated -->
+                            <span class="content-span" style="height: fit-content;">
+                                <span style="height: fit-content;">
+                                    <span id="content-span-1">$</span>
+                                </span>
+                                <span style="height: fit-content;">
+                                    <span id="content-span-2">199</span>
+
+                                </span>
+                                <span style="height: fit-content;">
+                                    <span id="content-span-3">99</span>
+                                </span>
+                            </span>
+                        </span>
+                        
+                        <a href="#" style=" text-decoration: none; background-color: black; color: white; border-radius: 5px; border: solid 1px black; padding-left: 5%; padding-right: 5%; height: 40px; width: 70%; margin-top: 5%; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: small;" class="center a-mid">
+                                SHOP NOW
+                        </a>
+                </div>
+                </div>
+
+                <!-- Middle part -->
+                <div id="poster-img">
+                    <img src="/images/Ekran Resmi 2022-11-15 17.27.26.png" alt="chair-img" style="height: 100%; width: 100%;">
+                </div>
+
+                <!-- Right part -->
+                <!-- this part is not displayed in mobile -->
+                <div class="poster-right">
+                        <span class="content-title"><strong>Porto Game Chair</strong></span>
+                    <span style="font-size: 20px; margin-top: 2%; margin-bottom: 5%;">from <s>$299.99</s></span>
+                        <!-- The p element and the div will be next to each other -->
+                        <span class="content">
+                            <span style="font-size: 20px; ">
+                                to
+                            </span>
+                            <!-- This div will be rotated -->
+                            <span class="content-span" style="height: fit-content;">
+                                <span style="height: fit-content;">
+                                    <span id="content-span-1">$</span>
+                                </span>
+                                <span style="height: fit-content;">
+                                    <span id="content-span-2">199</span>
+
+                                </span>
+                                <span style="height: fit-content;">
+                                    <span id="content-span-3">99</span>
+                                </span>
+                            </span>
+                        </span>
+                        
+                        <a href="#" style=" width:100%; text-decoration: none; background-color: black; color: white; border-radius: 5px; border: solid 1px black; padding-left: 5%; padding-right: 5%; height: 15%; width: 50%; margin-top: 5%;" class="center a-mid">
+                                SHOP NOW
+                        </a>
+                </div>
+                
+                <button class="w3-button w3-black w3-display-right btn-right"><a href="#" style="text-decoration:none; color:blue">&#10095;</a></button>
+            </div>
+
+            <!-- 8 circle cards -->
+            <!-- If they'll be clickable, a tag can be added later -->
+            <div class="container-cards">
+                <div class="arrow-mb">
+                    <button class="w3-button w3-black w3-display-left btn-left" ><a href="#" style=" text-decoration:none; color: blue;">&#10094;</a></button>
+                </div>
+                <div class="card">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.37.45.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Fashion</strong></span>
+                    <span class="card-product">7 PRODUCTS</span>
+                </div>
+                <div class="card">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.01.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Furniture</strong></span>
+                    <span class="card-product">1 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.12.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Sports</strong></span>
+                    <span class="card-product">2 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.29.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Toys</strong></span>
+                    <span class="card-product">2 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.37.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Cameras</strong></span>
+                    <span class="card-product">1 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.44.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Gaming</strong></span>
+                    <span class="card-product">1 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.43.52.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Headphones</strong></span>
+                    <span class="card-product">1 PRODUCTS</span>
+                </div>
+                <div class="card card-mb">
+                    <div class="center">
+                        <img src="/images/Ekran Resmi 2022-11-15 19.44.01.png" alt="card1" class="img-style">
+                    </div>
+                    <span class="card-title"><strong>Smartphones</strong></span>
+                    <span class="card-product">1 PRODUCTS</span>
+                </div>
+                
+                <div class="arrow-mb">
+                    <a href="#" style="text-decoration:none; color:blue">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers' container -->
+        <div class="container-offer">
+
+            <!-- Special Offers text -->
+            <div class="special-offers-text">
+                <i class="fa fa-percent " style="font-size:18px" id="mb-view" ></i>
+                <i class="fa fa-percent " style="font-size:24px" id="desktop-view"></i>
+                <p class="percent-class-p" >Special Offers</p>
+            </div>
+
+            <!-- Main boxes -->
+            <div class="container-offer-content">
+
+                 <!-- Left side -->
+                <div class="container-content-left">
+
+                    <div class="left-top">
+                        <div class="center left-top-offer">
+                                <span class="offer-span-1">OFFER ENDS IN: </span>
+                                <span class="offer-span-2">-289 DAYS, 0-8:0-57:0-47</span>
+                        </div>
+
+                        <img src="/images/Ekran Resmi 2022-11-15 22.22.47.png" alt="" height="60%" width="80%">
+                    </div>
+
+                    <div class="left-bottom">
+                        <div>
+                            <p style="color: grey; font-size: xx-small; text-align: center;">ACTION CAMERAS, CAMERA DRONES, DIGITAL CAMERAS, TOYS</p>
+
+                            <span class="center" style="margin-bottom: 2%; color: gray">DRONE PRO ONE</span>
+
+                            <!-- Rating -->
+                            <div class="center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                             <!-- Price -->
+                            <div class="center" style="margin-top: 5%;">
+                            <span class="span-price-1" ><s>$499.00</s></span>
+                            <span class="span-price-2" >$299.00</span>
+                            </div>
+                        </div>
+
+                            <!-- Button -->
+                        <a href="#" style="width: 60%; text-decoration: none;" class="center" id="btnClick">
+                            <button class="offer-btn">
+                                <i class="fa fa-shopping-bag" style="font-size:24px; color: white;"></i>
+                                <span style="color: white; margin-left: 5%; white-space: nowrap;" id="chart-btn"> ADD TO CART</span>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right side -->
+                <!-- non-visible on mobile -->
+                <div class="container-content-right">
+
+                    <!-- Right top -->
+                    <div class="container-items">
+
+                        <div class="item-card">
+
+                            <div class="hot-class">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 15%;" src="/images/Ekran Resmi 2022-11-16 00.04.16.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">FURNITURE, HOME ACCESSORIES</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$88.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="item-card">
+
+                            <div class="hot-class">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small;">HOT</span>
+                                <img style="align-self: center; margin-top: 15%;" src="/images/Ekran Resmi 2022-11-16 00.04.33.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">AUDIO AMPLIFIER...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class" style="line-height: 1; margin-top: 0">Beats Solo HD Drenched O..</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$88.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+                        <div class="item-card">
+
+                            <div class="hot-class">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 10%;" src="/images/Ekran Resmi 2022-11-16 00.04.44.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">BIRTHDAY FOR HIM...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Belt Accessories</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$19.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+                        <div class="item-card">
+
+                            <div class="hot-class">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 10%;" src="/images/Ekran Resmi 2022-11-16 00.04.50.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">ACCESSORIES, ACCESSORIES, FASHION..</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Black Bag</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$108.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Right bottom -->
+                    <div class="container-items">
+
+                        <div class="item-card">
+
+                            <div style="height: 60%; display: flex; flex-direction: column; align-items: flex-start; justify-content: start; padding-top: 5%; padding-left: 5%;">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 5%;" src="/images/Ekran Resmi 2022-11-16 00.04.59.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">FURNITURE, HOME ACCESSORIES</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Brown Arm Chair</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="item-card">
+
+                            <div style="height: 60%; display: flex; flex-direction: column; align-items: flex-start; justify-content: start; padding-top: 5%; padding-left: 5%;">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 5%; margin-right: 5%;" src="/images/Ekran Resmi 2022-11-16 00.05.22.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; display: flex; flex-direction: column; align-items: flex-start; justify-content: start;padding-top: 1%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">ACCESSORIES, FASHION..</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Brown Belt</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$39.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+                        <div class="item-card">
+
+                            <div style="height: 60%; display: flex; flex-direction: column; align-items: flex-start; justify-content: start; padding-top: 5%; padding-left: 5%;">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small;">HOT</span>
+                                <img style="align-self: center; margin-top: 15%;" src="/images/Ekran Resmi 2022-11-16 00.05.36.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">CAMCORDERS, CAMERAS..</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Camera Two</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$119.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+
+                        <div class="item-card">
+
+                            <div style="height: 60%; display: flex; flex-direction: column; align-items: flex-start; justify-content: start; padding-top: 5%; padding-left: 5%;">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 35%; font-size: small; visibility: hidden;">HOT</span>
+                                <img style="align-self: center; margin-top: 10%;" src="/images/Ekran Resmi 2022-11-16 00.05.45.png" alt="" height="50%">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div style="display: flex; flex-direction:row; justify-content: space-between">
+                                    <span class="gray-small">HOME ACCESSORIES, LIGHTING</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+                                <div style="height: 25%;">
+                                    <p class="p-class">Coffee Cup</p>
+                                </div>
+    
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+    
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$59.00</p>
+                                </div>
+    
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- nonvisible on desktop -->
+                <div class="items-mobile">
+
+                    <!-- left div -->
+                    <div class="sub-items-mobile">
+
+
+                        <!-- card -->
+                        <div class="item-card" style="border-top:solid 2px rgb(189, 188, 188);">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+
+
+
+
+                    </div>
+
+
+                    <!-- right div -->
+                    <div class="sub-items-mobile mobile-items-right">
+
+
+                        <!-- card -->
+                        <div class="item-card" style="border-top:solid 2px rgb(189, 188, 188);">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small; visibility: hidden;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+                        <!-- card -->
+                        <div class="item-card">
+                            <div class="sub-item-mobile-top">
+                                <span style="padding: 2% 5%; background-color:green; color:white; border-radius: 10px; font-size: xx-small; visibility: hidden;">HOT</span>
+                                <img src="/images/Ekran Resmi 2022-11-16 21.11.25.png" alt="" style="height: 80%;">
+                            </div>
+
+                            <div style="height: 40%; padding-left: 5%;">
+                                <div class="sub-item-mobile-bottom">
+                                    <span class="gray-small">FURNITURE...</span>
+                                    <i class="fa fa-heart heart-item white-heart"></i>
+                                </div>
+
+                                <div style="height: fit-content;">
+                                    <p class="p-class">Wooden Chair</p>
+                                </div>
+
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star checked" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                    <span class="fa fa-star" style="font-size: 12px"></span>
+                                </div>
+
+                                <div style="margin-top: 15%;">
+                                    <p class="p-class-price">$99.00 - $280.00</p>
+                                </div>
+
+                            </div>
+
+
+    
+                        </div>
+                        <!-- card ends -->
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+         
+
+            <!-- Subscribe part -->
+            <div class="subscribe-part">
+
+                <!-- Left part -->
+                <div class="subs-left">
+                    <div class="sub-subs-left">
+                        <i class="fa fa-envelope" style="font-size:36px"></i>
+                    </div>
+                    <div class="sub-subs-left-bottom" >
+                        <p class="p-class-2 sub-p-view" >Subscribe To Our Newsletter</p>
+                        <p class="gray-small p-class-2" style="line-height: 1;">Get all the latest information on Events, Sales and Offers</p>
+                    </div>
+                </div>
+
+
+                <!-- Right part -->
+                <div class="subs-right">
+                    <input style="width: 80%" type="text" class="search-input subscribe-input" placeholder="Your E-mail Address">
+                    </input>
+                    <a href="#" class="subs-btn-2" id="subs-btn">
+                        SUBSCRIBE NOW!
+                    </a>
+
+                </div>
+            </div>
+
+        
+
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div>
+            <hr style="color: grey; border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); width: 95%;">
+        </div>
+
+        <div class="footer-container">
+
+            <div style="display: flex; flex-direction:column; justify-content:space-between; font-size: small;">
+                <p class="" style="font-weight: bold; font-size:medium;">CUSTOMER SERVICE</p>
+                <p class="gray-sm-f">Help & FAQs</p>
+                <p class="gray-sm-f">Order Tracking</p>
+                <p class="gray-sm-f">Shipping & Delivery</p>
+                <p class="gray-sm-f">Orders History</p>
+                <p class="gray-sm-f">Advanced Search</p>
+                <p class="gray-sm-f">Login</p>
+            </div>
+
+            <div style="display: flex; flex-direction:column; justify-content:space-between; font-size: small;">
+                <p class="" style="font-weight: bold; font-size:medium;">ABOUT US</p>
+                <p class="gray-sm-f">About us</p>
+                <p class="gray-sm-f">Careers</p>
+                <p class="gray-sm-f">Our Stores</p>
+                <p class="gray-sm-f">Corporate Sales</p>
+                <p class="gray-sm-f">Careers</p>
+            </div>
+
+            <div style="display: flex; flex-direction:column; justify-content:space-between; font-size: small;">
+                <p class="" style="font-weight: bold; font-size:medium;">MORE INFORMATION</p>
+                <p class="gray-sm-f">Affiliates</p>
+                <p class="gray-sm-f">Refer a Friend</p>
+                <p class="gray-sm-f">Student Beans Offers</p>
+                <p class="gray-sm-f">Gift Vouchers</p>
+            </div>
+
+                <!-- Socials -->
+            <div style="display: flex; flex-direction:column; justify-content:space-between; font-size: small; width: 15%;">
+                <p class="socials-p" style="font-weight: bold; font-size:medium;">SOCIAL MEDIA</p>
+                <div style="width: 100%; display: flex; justify-content: space-between; margin-top: 5%;">
+                    <a href="#" class="border-socials center">
+                        <img src="/images/Ekran Resmi 2022-11-16 11.07.16.png" alt="" height="25em" style="border-radius:50px;">
+                    </a href="#">
+
+                    <a href="#" class="border-socials center">
+                        <img src="/images/Ekran Resmi 2022-11-16 11.07.23.png" alt="" height="25em" style="border-radius:50px;">
+                    </a>
+
+                    <a href="#" class="border-socials center" >
+                        <img src="/images/Ekran Resmi 2022-11-16 11.07.29.png" alt="" height="25em" style="border-radius:50px;">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="/main.js"></script>
+</body>
+</html>
